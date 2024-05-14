@@ -16,6 +16,11 @@ class CreateEstadosTable extends Migration
                 'auto_increment' => true,
                 'null' => false, // requerido
             ],
+
+            'nombre' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+            ]
         ]);
 
         $this->forge->addKey('estado_id', true);

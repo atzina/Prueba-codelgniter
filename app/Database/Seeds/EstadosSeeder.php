@@ -43,6 +43,8 @@ class EstadosSeeder extends Seeder
             ['estado_id'=> 32,'nombre' => 'Zacatecas'],
        
 
-        ]
+        ];
+
+        $this->db->table('estados')->insertBatch($data);
     }
 }
